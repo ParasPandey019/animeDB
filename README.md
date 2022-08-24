@@ -5,7 +5,7 @@ This project is made using ReactJS.
 The app allows you to search for any anime you want to search, add them to your wishlist, also you can route between different anime generes in the home page.
 Also each anime is linked to Animixplay where the user can enjoy watching the naime too.
 
-Checkout the live app [**here**](https://019-animedb.netlify.app).
+Checkout the live app [**here**]().
 
 ## Libraries used
 
