@@ -1,0 +1,26 @@
+.cardList{
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(160px,1fr));
+    grid-template-rows: repeat(10, 1fr);
+    gap: 5px;
+    overflow: hidden;
+    max-height: calc(305px*10);
+    overflow: hidden;
+}
+
+@media  (max-width: 1000px){
+    .cardlist{
+        max-height: calc(305px*15);
+    }
+}
+
+@media (max-width: 477px){
+    .cardList{
+        grid-template-columns: 1fr;
+        max-width: 210px;
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+

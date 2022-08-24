@@ -1,0 +1,10 @@
+.app{
+    background-color: rgb(24,24,25);
+}
+
+.appBody{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
