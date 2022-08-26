@@ -37,7 +37,7 @@ function SearchResults({setFooter}) {
       let result = await axios.get(`https://api.jikan.moe/v3/search/anime?q=${query}&page=1`);
       setTimeout(function(){setLoader(false)}, 500);
       setTimeout(function(){setFooter(true)}, 500);
-      let temp = result.data.results.slice(0,15);
+      let temp = result.data.results.slice(0,20);
       setResults(temp);
     }
     else{
