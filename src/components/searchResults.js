@@ -70,7 +70,7 @@ function SearchResults({setFooter}) {
                           <p className='searchSynopsis'>{anime.synopsis}</p>
                         </div>
                         <div>
-                          <span onClick={()=>send(anime)} className='watchlater'><i className="fa-solid fa-plus watchPlus"></i><span className='watchLaterText'>Add to Watch Later</span></span>
+                          <span onClick={()=>send(anime)} className='watchLater' title='add to watch later'><i className="fa-solid fa-plus watchPlus"></i><span className='watchLaterText'>Add to Watch Later</span></span>
                         </div>
                       </div>
                     </div>

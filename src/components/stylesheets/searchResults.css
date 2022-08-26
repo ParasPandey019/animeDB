@@ -21,10 +21,15 @@
     background-color: black;
 }
 
-.searchImg img{
+.searchImg{
     height: 100%;
     width: 145px;
     cursor: pointer;
+}
+
+.searchImg img{
+    height: 100%;
+    width: 145px;
 }
 
 .searchInfo{
@@ -65,7 +70,7 @@
     color: white;
 }
 
-.watchlater{
+.watchLater{
     display: inline-block;
     border: 2px solid white;
     color: white;
@@ -80,7 +85,7 @@
     margin-right: 5px;
 }
 
-.watchlater:hover{
+.watchLater:hover{
     background-color: #3f3f3f;
 }
 
@@ -96,8 +101,15 @@
     }
 
     .watchLater{
-        height: auto;
-        text-align: center;
+        display: flex;
+        align-items: center;
+        height: 30px;
+        width: 30px;
+        justify-content: center;
+        border-radius: 0px;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
     }
 
     .watchPlus{

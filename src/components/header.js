@@ -92,8 +92,8 @@ function Header() {
               <i className="fa-solid fa-clock text-light" style={{fontSize: "25px"}}></i>
             </Badge>
             </Dropdown.Toggle>
-            <Dropdown.Menu style={{width:"280px", maxHeight:"300px", overflowY:"scroll"}}>
-              {getdata.length === 0?<div><img style={{height: "auto", width:"100%"}} src="https://media0.giphy.com/media/ztm2TsXkrUeQ0/giphy.gif?cid=ecf05e47xpk3k65si09f0md0xf1amgkuclgaciz5eq8rph85&rid=giphy.gif&ct=s" alt=''></img><h3 style={{textAlign: 'center'}}>NOTHING</h3><h3 style={{textAlign: 'center'}}>HERE!!!</h3></div> : <div className='watchlist'>
+            <Dropdown.Menu style={{width:"280px", maxHeight:"310px", overflowY:"scroll"}}>
+              {getdata.length === 0?<div><img style={{height: "100%", width:"100%"}} src="https://media0.giphy.com/media/ztm2TsXkrUeQ0/giphy.gif?cid=ecf05e47xpk3k65si09f0md0xf1amgkuclgaciz5eq8rph85&rid=giphy.gif&ct=s" alt=''></img><h3 style={{textAlign: 'center'}}>NOTHING</h3><h3 style={{textAlign: 'center'}}>HERE!!!</h3></div> : <div className='watchlist'>
                 {getdata.map(anime=>(
                   <div className="list" key={anime.mal_id}>
                       <img className='listImg' src={anime.image_url} alt=''></img>
