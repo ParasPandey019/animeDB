@@ -21,10 +21,16 @@
     cursor: pointer;
 }
 
-.genereTabs.active{
+.tabActive{
+    text-decoration: none;
     color: white;
-    background-color: #3c3c3c;
-    border-bottom: 3px solid white;
+    font-size: 15px;
+    font-family: 'My Soul', cursive;
+    padding: 5px 5px;
+    border-bottom: 3px solid #fafafa;
+    margin-right: 5px;
+    background-color: #282828;
+    cursor: pointer;
 }
 
 .genereTabs:hover{

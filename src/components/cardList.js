@@ -13,7 +13,7 @@ function CardList({genere, setFooter}) {
             setLoader(true);
             setFooter(false);
             const request = await axios.get(`https://api.jikan.moe/v3/genre/anime/${genere}/1`)
-            setTimeout(function(){setLoader(false)}, 500);
+            setTimeout(function(){setLoader(false)}, 1500);
             setTimeout(function(){setFooter(true)}, 500);
             setGenereList(request.data.anime);
         }
