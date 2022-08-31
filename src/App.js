@@ -10,6 +10,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const [footer, setFooter] = useState(true);
+  const goToTop =() =>{
+    window.scrollTo(0,0)
+  }
+
   return (
     <BrowserRouter>
       <div className="app">
@@ -30,6 +34,9 @@ function App() {
           ></Route>
         </Routes>
         {footer && <Footer />}
+        <div onClick={goToTop} className="goToTop">
+        <i class="fa-solid fa-arrow-up"></i>
+      </div>
       </div>
     </BrowserRouter>
   );
