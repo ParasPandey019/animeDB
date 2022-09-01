@@ -13,9 +13,11 @@
     bottom: 10%;
     left: 0px;
     color: white;
-    font-size: 1.8rem;
-    background-color: rgb(198, 197, 197);
-    color: rgb(74, 73, 73);
+    font-size: 1.7rem;
+    background-color: #24282f;
+    color: #99d4ff;
+    border: 1px solid #444e5b;
+    border-radius: 2px;
     width: 40px;
     text-align: center;
     cursor: pointer;

@@ -5,13 +5,13 @@
     grid-template-rows: repeat(10, 1fr);
     gap: 5px;
     overflow: hidden;
-    max-height: calc(305px*10);
+    height: calc(305px*10);
     overflow: hidden;
 }
 
-@media  (max-width: 1000px){
-    .cardlist{
-        max-height: calc(305px*15);
+@media  (max-width: 1000px) and (min-width: 477px) {
+    .cardList{
+        height: calc(305px*15);
     }
 }
 
@@ -21,10 +21,11 @@
         max-width: 190px;
         margin: auto;
         margin-top: 20px;
+        height: calc(305px*20);
     }
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1200px) and (min-width: 1000px){
     .cardList{
         display: grid;
         margin-top: 20px;
