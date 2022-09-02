@@ -92,15 +92,15 @@ function Header() {
               <i className="fa-solid fa-clock text-light" style={{fontSize: "25px"}}></i>
             </Badge>
             </Dropdown.Toggle>
-            <Dropdown.Menu style={{width:"280px", maxHeight:"310px", overflowY:"scroll"}}>
-              {getdata.length === 0?<div><img style={{height: "100%", width:"100%"}} src="https://media0.giphy.com/media/ztm2TsXkrUeQ0/giphy.gif?cid=ecf05e47xpk3k65si09f0md0xf1amgkuclgaciz5eq8rph85&rid=giphy.gif&ct=s" alt=''></img><h3 style={{textAlign: 'center'}}>NOTHING</h3><h3 style={{textAlign: 'center'}}>HERE!!!</h3></div> : <div className='watchlist'>
+            <Dropdown.Menu style={{width:"280px", maxHeight:"310px", overflowY:"scroll", backgroundColor:"rgb(41, 38, 38)", border: "2px solid white"}}>
+              {getdata.length === 0?<div><img style={{height: "100%", width:"100%"}} src="https://media0.giphy.com/media/ztm2TsXkrUeQ0/giphy.gif?cid=ecf05e47xpk3k65si09f0md0xf1amgkuclgaciz5eq8rph85&rid=giphy.gif&ct=s" alt=''></img><h3 style={{textAlign: 'center', color:"white"}}>NOTHING</h3><h3 style={{textAlign: 'center', color:"white"}}>HERE!!!</h3></div> : <div className='watchlist'>
                 {getdata.map(anime=>(
                   <div className="list" key={anime.mal_id}>
                       <img className='listImg' src={anime.image_url} alt=''></img>
                       <div>
                         <p className='listTitle'>{anime.title}</p>
-                        <p className='listEpisodes' style={{marginBottom:"0"}}>total episodes - {anime.episodes}</p>
-                        <p style={{marginBottom:"5px"}}>rating - {anime.score}</p>
+                        <p className='listEpisodes' style={{marginBottom:"0", color:"white"}}>total episodes - {anime.episodes}</p>
+                        <p style={{marginBottom:"5px", color:"white"}}>rating - {anime.score}</p>
                       </div>
                       <div onClick={()=>del(anime.mal_id)} className='trash'>
                         <i className="fa-solid fa-trash"></i>
@@ -108,7 +108,7 @@ function Header() {
                   </div>
                 
                 ))}
-                <p className="END"style={{fontSize:"15px",textAlign:"center",margin:"10px 0px",fontWeight:"600"}}>END</p>
+                <p className="END"style={{fontSize:"15px",textAlign:"center",margin:"10px 0px",fontWeight:"600", color:"white"}}>END</p>
               </div>}
             </Dropdown.Menu>
           </Dropdown>
