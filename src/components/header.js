@@ -80,11 +80,11 @@ function Header() {
     <div className='header'>
       <Navbar expand="lg" variant="dark" style={{backgroundColor: "rgb(24,24,25)"}}>
       <Container>
-        <Navbar.Brand onClick={()=> navigateHome()}><img src={logo} style={{height:"50px", marginRight: "5px", cursor:"pointer", padding:"0px"}} alt=''></img></Navbar.Brand>
+        <Navbar.Brand onClick={()=> navigateHome()}><img src={logo} style={{height:"45px", marginRight: "5px", cursor:"pointer", padding:"0px"}} alt=''></img></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <span style={{color:'white',cursor:'pointer'}} onClick={navigateHome}><i class="fa-sharp fa-solid fa-house" style={{fontSize:"1.65rem"}}></i></span>
+            <span style={{color:'white',cursor:'pointer'}} onClick={navigateHome}><i class="fa-sharp fa-solid fa-house" style={{fontSize:"1.5rem"}}></i></span>
           </Nav>
           <Dropdown>
             <Dropdown.Toggle variant="default" id="dropdown-basic" style={{padding:"0",margin:"0"}}>
